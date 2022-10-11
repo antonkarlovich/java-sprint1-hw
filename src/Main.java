@@ -5,10 +5,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         StepTracker stepTracker = new StepTracker();
 
-        printMenu();
-        int userInput = scanner.nextInt();
 
-        while (userInput != 0) {
+        while (true) {
+            printMenu();
+            int userInput = scanner.nextInt();
 
             if (userInput == 1) {
                 stepTracker.saveSteps(scanner);
@@ -24,9 +24,6 @@ public class Main {
             } else {
                 System.out.println("Такой команды нет");
             }
-            System.out.println();
-            printMenu();
-            userInput = scanner.nextInt();
         }
         System.out.println("Программа завершена");
     }
