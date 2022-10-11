@@ -69,9 +69,9 @@ public class StepTracker {
     public void stepsInDay(int month) {
         for (int i = 0; i < monthToData[month].days.length; i++) {
             if (i == monthToData[month].days.length - 1) {
-                System.out.println(i + 1 + " день: " + monthToData[month].days[i]);
+                System.out.print(i + 1 + " день: " + monthToData[month].days[i]);
             } else {
-                System.out.println(i + 1 + " день: " + monthToData[month].days[i] + ",");
+                System.out.print(i + 1 + " день: " + monthToData[month].days[i] + ",");
             }
 
         }
